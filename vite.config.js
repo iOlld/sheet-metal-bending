@@ -66,7 +66,7 @@ export default defineConfig({
     vuePlugin(),
 
     componentsPlugin({
-      dirs: ['src/components-ui', 'src/components-logic'],
+      dirs: ['src/components/ui', 'src/components/logic'],
       dts: './typed-components.d.ts',
     }),
 
