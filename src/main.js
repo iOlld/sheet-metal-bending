@@ -1,5 +1,16 @@
-import { createApp } from 'vue'
-import './style.css'
+import { createPinia } from 'pinia'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import tailwindPlugin from '@/plugins/tailwind'
+import dayjsPlugin from '@/plugins/dayjs'
+
+import '@/assets/scss/index.scss'
+
+const pinia = createPinia()
+
+const app = createApp(App)
+  .use(pinia)
+  .use(tailwindPlugin)
+  .use(dayjsPlugin)
+
+app.mount('#app')
