@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "run-p dev:vite dev:server",
+    "dev:vite": "vite --host",
+    "dev:server": "json-server -w server/db.json -p 3001",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -35,6 +37,8 @@
     "@vitejs/plugin-vue": "^5.2.3",
     "autoprefixer": "^10.4.21",
     "dotenv": "^16.5.0",
+    "json-server": "^1.0.0-beta.3",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.5.3",
     "unplugin-auto-import": "^19.2.0",
     "unplugin-vue-components": "^28.5.0",
