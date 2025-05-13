@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="flex justify-center items-center">
-    Скоро почнемо
+  <div class="">
+    <RouterView />
   </div>
 </template>

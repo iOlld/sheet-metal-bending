@@ -82,8 +82,6 @@ export default defineConfig({
           // '@/store': ['useMainStore'],
           // '@/utils/index': [['default', '_']],
           '@vueuse/core': [
-            'get', // DEPRECATED
-            'set', // DEPRECATED
             'watchTriggerable',
             'watchDebounced',
             'useTimeoutFn',

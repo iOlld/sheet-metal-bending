@@ -1,10 +1,10 @@
-import pluginTailwindcssAnimate from 'tailwindcss-animate'
+import tailwindcssAnimate from 'tailwindcss-animate'
 
 export default {
 	darkMode: ['class'],
 	content: ['./index.html', './src/**/*.{vue,js}'],
 
-	plugins: [pluginTailwindcssAnimate],
+	plugins: [tailwindcssAnimate],
 	theme: {
     fontFamily: {
       sans: ['Nunito Sans', 'sans-serif'],
