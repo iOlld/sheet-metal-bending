@@ -1,5 +1,5 @@
-function getValue(name, { type = String, required = false, validate = () => true } = {}) {
-  let result = name || undefined
+function getValue(value, { type = String, required = false, validate = () => true } = {}) {
+  let result = value || undefined
 
   if (!result && required)
     throw new Error('Env variable is required!')
